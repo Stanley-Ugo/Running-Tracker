@@ -1,7 +1,15 @@
 let entries = [];
 
+const entriesWrapper = document.querySelector('#entries');
+
 function addNewEntry(newEntry) {
+    entriesWrapper.removeChild(entriesWrapper.firstElementChild);
     
+    const listItem = document.createElement('li');
+    const listValue = document.createTextNode(newEntry);
+    listItem.appendChild(listValue);
+
+    entriesWrapper.appendChild(listItem);
 }
 function handleSubmit(event) {
     event.preventDefault();
