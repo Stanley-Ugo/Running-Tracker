@@ -46,3 +46,15 @@ button {
     background: #0ad9ff;
     margin: 0.5rem 0 1rem 0;
 }
+
+ul {
+    padding: 0;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+
+li {
+    border: 1px solid;
+    padding: 1rem 1.5rem;
+}
