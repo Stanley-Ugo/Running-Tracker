@@ -11,6 +11,10 @@ function addNewEntry(newEntry) {
 
     entriesWrapper.appendChild(listItem);
 }
+
+function reducer(total, currentValue){
+    return total + currentValue;
+}
 function handleSubmit(event) {
     event.preventDefault();
     const entry = Number(document.querySelector('#entry').value);
