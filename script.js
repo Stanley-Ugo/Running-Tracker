@@ -34,6 +34,7 @@ function handleSubmit(event) {
     entries.push(entry);
     addNewEntry(entry);
     calcTotal();
+    calcAverage();
 }
 
 const form = document.querySelector("form").addEventListener("submit", handleSubmit);
