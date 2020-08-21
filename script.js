@@ -26,6 +26,10 @@ function calcAverage(){
     const average = (entries.reduce(reducer) / entries.length).toFixed(1);
     document.getElementById('average').innerText = average;
 }
+
+function weeklyHigh(){
+    
+}
 function handleSubmit(event) {
     event.preventDefault();
     const entry = Number(document.querySelector('#entry').value);
