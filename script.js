@@ -17,13 +17,13 @@ function reducer(total, currentValue){
 }
 
 function calcTotal(){
-    const totalValue = entries.reduce(reducer);
+    const totalValue = entries.reduce(reducer).toFixed(1);
     document.getElementById('total').innerHTML = totalValue;
     document.getElementById('progressTotal').innerHTML = totalValue;
 }
 
 function calcAverage(){
-    const average = entries.reduce(reducer) / entries.length;
+    const average = (entries.reduce(reducer) / entries.length).toFixed(1);
     document.getElementById('average').innerText = average;
 }
 function handleSubmit(event) {
