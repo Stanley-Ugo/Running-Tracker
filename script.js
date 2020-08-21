@@ -15,6 +15,12 @@ function addNewEntry(newEntry) {
 function reducer(total, currentValue){
     return total + currentValue;
 }
+
+function calcTotal(){
+    const totalValue = entries.reduce(reducer);
+    document.getElementById('total').innerHTML = totalValue;
+    document.getElementById('progressTotal').innerHTML = totalValue;
+}
 function handleSubmit(event) {
     event.preventDefault();
     const entry = Number(document.querySelector('#entry').value);
@@ -22,6 +28,7 @@ function handleSubmit(event) {
     document.querySelector('form').reset();
     entries.push(entry);
     addNewEntry(entry);
+    calcTotal();
 }
 
 const form = document.querySelector("form").addEventListener("submit", handleSubmit);
