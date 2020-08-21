@@ -1,6 +1,9 @@
+const goal = 25;
 let entries = [];
 
 const entriesWrapper = document.querySelector('#entries');
+
+document.querySelector('#target').innerText = goal;
 
 function addNewEntry(newEntry) {
     entriesWrapper.removeChild(entriesWrapper.firstElementChild);
@@ -40,6 +43,7 @@ function handleSubmit(event) {
     addNewEntry(entry);
     calcTotal();
     calcAverage();
+    weeklyHigh();
 }
 
 const form = document.querySelector("form").addEventListener("submit", handleSubmit);
