@@ -24,7 +24,7 @@ function calcTotal(){
 
 function calcAverage(){
     const average = entries.reduce(reducer) / entries.length;
-    
+    document.getElementById('average').innerText = average;
 }
 function handleSubmit(event) {
     event.preventDefault();
