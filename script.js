@@ -23,6 +23,7 @@ function calcTotal(){
 }
 
 function calcAverage(){
+    const average = entries.reduce(reducer) / entries.length;
     
 }
 function handleSubmit(event) {
