@@ -28,7 +28,8 @@ function calcAverage(){
 }
 
 function weeklyHigh(){
-    
+    const high = Math.max(...entries);
+    document.getElementById('high').innerText = high;
 }
 function handleSubmit(event) {
     event.preventDefault();
