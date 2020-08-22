@@ -115,9 +115,9 @@ li {
     background: #1c262f;
 }
 
-@media screen and (min-width: 80px) {
+@media screen and (min-width: 800px) {
     body {
-        width: 600%;
+        width: 60%;
     }
 
     input[type='number']{
