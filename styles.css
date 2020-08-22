@@ -102,7 +102,7 @@ li {
     width: 250px;
     height: 250px;
     border-radius: 50%;
-    background: conic-gradient(#70db70 50%, #2d3740 50%);
+    /* background: conic-gradient(#70db70 50%, #2d3740 50%); */
     display: flex;
     justify-content: center;
     align-items: center;
